@@ -7,6 +7,16 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    // // Method 1 - Using reverse() function
+    // return str.split("").reverse().join("") === str;
+
+    // Method 2 - Using every() function
+    // You can also use str[str.length - index - 1] to access characters in a string
+    return str.split("").every((item, index, arr) => {
+        return item == arr[arr.length - index - 1];
+    });
+}
+
 
 module.exports = palindrome;

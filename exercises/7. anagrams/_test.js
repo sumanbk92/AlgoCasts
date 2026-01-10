@@ -25,3 +25,9 @@ test('"A tree, a life, a bench" is not an anagram of "A tree, a fence, a yard"',
     anagrams('A tree, a life, a bench', 'A tree, a fence, a yard')
   ).toBeFalsy();
 });
+
+test("test anagrams..", () => {
+  expect(anagrams('rail safety', 'fairy tales')).toBeTruthy();
+  expect(anagrams('RAIL! SAFETY!', 'fairy tales')).toBeTruthy();
+  expect(anagrams('Hi there', 'Bye there')).toBeFalsy();
+});

@@ -11,3 +11,10 @@ test('Reverse reverses a string', () => {
 test('Reverse reverses a string', () => {
   expect(reverse('  abcd')).toEqual('dcba  ');
 });
+
+test("Reverse reverses a string", () => {
+  expect(reverse('apple')).toEqual('elppa');
+  expect(reverse('hello')).toEqual('olleh');
+  expect(reverse('Greetings!')).toEqual('!sgniteerG');
+  expect(reverse('Suman')).toEqual('namuS');
+});
